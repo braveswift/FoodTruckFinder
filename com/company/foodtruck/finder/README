@@ -1,0 +1,38 @@
+README
+
+I developed it in IntelliJ and there will be some differencies if you are using something other than IntelliJ.
+
+
+
+
+dependencies to install:
+
+JDK 8
+jackson-databind-2.10.1.jar
+jackson-annotation-2.10.1.jar
+jackson-core-2.10.1.jar
+lombok-1.18.8.jar
+
+Put all these jars under a folder
+	src/
+Also put my source file folder under the folder, thus it should be something like
+	src/com/company/foodtruck/finder/*.java
+
+
+
+
+build program:
+
+I built using IDE. For commandLine, it should be 
+	
+cd src/
+javac -cp .:jackson-databind-2.10.1.jar:lombok-1.18.8.jar:jackson-core-2.10.1.jar:jackson-annotations-2.10.1.jar com/company/foodtruck/finder/FoodTruckFinder.java
+
+
+
+
+run program:
+
+cd  src/
+java -cp .:jackson-databind-2.10.1.jar:lombok-1.18.8.jar:jackson-core-2.10.1.jar:jackson-annotations-2.10.1.jar com/company/foodtruck/finder/FoodTruckFinder
+
